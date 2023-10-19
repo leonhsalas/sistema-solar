@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(png-transparent-desktop-space-blue-display-resolution-space-atmosphere-computer-wallpaper-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#sun{
+    margin-top: 20vh;
+    margin-right: 30vw;
+    animation: spin 17s linear infinite;
+}
+
+#mercury{
+    width: 0.5vw;
+    height: 0.5vw;
+    animation: spin 30s linear infinite;
+}
+
+#venus{
+    width: 2.5vw;
+    height: 2.5vw;
+    animation: spin 120s linear infinite;
+}
+#earth{
+    width: 2.75vw;
+    height: 2.75vw;
+    animation: spin 17s linear infinite;
+}
+#mars{
+    height: 1.5vw;
+    height: 1.5vw;
+    animation: spin 18s linear infinite;
+}
+#jupiter{
+    height: 11vw;
+    height: 11vw;
+    animation: spin 6s linear infinite;
+}
+#saturn{
+    height: 8vw;
+    height: 8vw;
+    animation: spin 8s linear infinite;
+}
+#uranus{
+    height: 5.5vw;
+    height: 5.5vw;
+}
+#neptune{
+    height: 5vw;
+    height: 5vw;
+    animation: spin 11s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
