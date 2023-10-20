@@ -40,7 +40,7 @@ body{
     position: absolute;
     height: 40px;
     animation: spin 120s linear infinite;
-    margin-left: 00px;
+    margin-left: 100px;
 
 }
 #earth{
