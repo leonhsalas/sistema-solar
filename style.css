@@ -17,53 +17,107 @@ body{
 }
 
 #sun{
-    margin-top: 20vh;
-    margin-right: 30vw;
-    animation: spin 17s linear infinite;
+    margin-top: 500px;
+    position: absolute;
+    animation: sun 17s linear infinite;
+    height: 500px;
+    width: 500px;
 }
 
 #mercury{
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 10px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 10px;
     animation: spin 30s linear infinite;
+    margin-left: 00px;
+
 }
 
 #venus{
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 40px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 40px;
     animation: spin 120s linear infinite;
+    margin-left: 00px;
+
 }
 #earth{
-    width: 2.75vw;
-    height: 2.75vw;
+    width: 41px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 41px;
     animation: spin 17s linear infinite;
+    margin-left: 00px;
+
 }
 #mars{
-    height: 1.5vw;
-    height: 1.5vw;
+    width: 20.5px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 20.5px;
     animation: spin 18s linear infinite;
+    margin-left: 00px;
+
 }
 #jupiter{
-    height: 11vw;
-    height: 11vw;
+    width: 100px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 100px;
     animation: spin 6s linear infinite;
+    margin-left: 00px;
+
 }
 #saturn{
-    height: 8vw;
-    height: 8vw;
+    height: 90px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 90px;
     animation: spin 8s linear infinite;
+    margin-left: 00px;
+
 }
 #uranus{
-    height: 5.5vw;
-    height: 5.5vw;
+    width: 80px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 80px;
+    margin-left: 00px;
+    
 }
 #neptune{
-    height: 5vw;
-    height: 5vw;
+    width: 75px;
+    margin-top: 3000px;
+    position: absolute;
+    height: 75px;
     animation: spin 11s linear infinite;
+    margin-left: 00px;  
 }
 
 @keyframes spin{
+    0%{
+        rotate: 0deg;
+        margin-top: 250px;
+        margin-right: 250px;
+    }
+    33%{
+        margin-top: -250px;
+        margin-right: 250px;
+    }
+    66%{
+        margin-top: -250px;
+        margin-left: 250px;
+    }
+    100%{
+        rotate: 360deg; 
+        margin-top: 250px;
+        margin-left: 250px;
+    }
+}
+
+@keyframes sun{
     0%{
         rotate: 0deg;
     }
@@ -71,3 +125,4 @@ body{
         rotate: 360deg;
     }
 }
+
