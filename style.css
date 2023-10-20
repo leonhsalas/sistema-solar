@@ -17,7 +17,7 @@ body{
 }
 
 #sun{
-    margin-top: 500px;
+    margin-top: 725px;
     position: absolute;
     animation: sun 17s linear infinite;
     height: 500px;
@@ -26,95 +26,99 @@ body{
 
 #mercury{
     width: 10px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 10px;
-    animation: spin 30s linear infinite;
-    margin-left: 00px;
+    animation: spin 10s linear infinite;
+    margin-left: 50px;
+    z-index: 500;
 
 }
 
 #venus{
     width: 40px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 40px;
-    animation: spin 120s linear infinite;
-    margin-left: 300px;
+    margin-right: 100px;
+    animation: spin 12s linear infinite;
+    z-index: 500;
 
 }
 #earth{
     width: 41px;
-    margin-top: 3000px;
+    margin-top: 800px;
+    margin-left: 30px;
     position: absolute;
     height: 41px;
-    animation: spin 17s linear infinite;
-    margin-left: 00px;
+    animation: spin 14s linear infinite;
+    margin-left: 150px;
+    z-index: 500;
 
 }
 #mars{
     width: 20.5px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 20.5px;
-    animation: spin 18s linear infinite;
-    margin-left: 00px;
+    animation: spin 46s linear infinite;
+    margin-right: 200px;
+    z-index: 500;
 
 }
 #jupiter{
     width: 100px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 100px;
-    animation: spin 6s linear infinite;
-    margin-left: 00px;
+    animation: spin 22s linear infinite;
+    margin-left: 250px;
+    z-index: 500;
 
 }
 #saturn{
     height: 90px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 90px;
-    animation: spin 8s linear infinite;
-    margin-left: 00px;
+    animation: spin 26s linear infinite;
+    margin-right: 300px;
+    z-index: 500;
 
 }
 #uranus{
     width: 80px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 80px;
-    margin-left: 00px;
-    
+    margin-left: 350px;
+    animation: spin 32s linear infinite;
+    z-index: 500;
 }
 #neptune{
     width: 75px;
-    margin-top: 3000px;
+    margin-top: 800px;
     position: absolute;
     height: 75px;
-    animation: spin 11s linear infinite;
-    margin-left: 00px;  
+    animation: spin 34s linear infinite;
+    margin-right: 400px;
+    z-index: 500;  
 }
 
-@keyframes spin{
-    0%{
-        rotate: 0deg;
-        margin-top: 250px;
-        margin-right: 250px;
-    }
-    33%{
-        margin-top: -250px;
-        margin-right: 250px;
-    }
-    66%{
-        margin-top: -250px;
-        margin-left: 250px;
-    }
-    100%{
-        rotate: 360deg; 
-        margin-top: 250px;
-        margin-left: 250px;
-    }
+@keyframes spin {
+
+    0%  { -webkit-transform: rotate(0deg) translateX(5px) translateY(170px) rotate(0deg) scale(1); 
+    rotate: 0deg;}
+
+    25% { -webkit-transform: rotate(90deg) translateX(5px) translateY(170px) rotate(-90deg) scale(.75); }
+
+    50%  { -webkit-transform: rotate(180deg) translateX(5px) translateY(170px) rotate(-180deg) scale(.60); }
+
+    75%  { -webkit-transform: rotate(270deg) translateX(5px) translateY(270px) rotate(-270deg) scale(.75); }
+
+    100%  { -webkit-transform: rotate(360deg) translateX(5px) translateY(170px) rotate(-360deg) scale(1); 
+    rotate: 360deg;}
+
 }
 
 @keyframes sun{
